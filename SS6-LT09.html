@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    let z = [];
+    function characters(Array,V) {
+        let check=false;
+        let count =0;
+    for(let i=0;i<Array.length;i++){
+        if(V===Array[i]){
+            check = true;
+            count++;
+        }
+    }
+        z[0]=check;
+        z[1] = count;
+        return z
+}
+   let enterArray=[];
+    for(let j=0;j<10;j++){
+        let main = prompt("Enter Character");
+        enterArray[j]=main
+    }
+    let x = prompt("Enter any character");
+    characters(enterArray,x);
+    if (z[0]===true){
+        alert("Số lần xuất hiện của ký tự "+ x +" trong mảng là: "+ z[1] )
+    }else {alert("-1")}
+
+</script>
+</body>
+</html>

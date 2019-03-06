@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function swap(number1,number2){
+        let newNumber = 0;
+        newNumber = number1;
+        number1 = number2;
+        number2 = newNumber;
+        return (number1+" , "+number2)
+    }
+    let enterNumber1=parseInt(prompt("Enter number1 here"));
+    let enterNumber2=parseInt(prompt("Enter number2 here"));
+    let result = swap(enterNumber1,enterNumber2);
+    document.write( result )
+</script>
+</body>
+</html>

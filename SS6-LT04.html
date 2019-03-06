@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function exam (text) {
+        let check = false;
+        if (text==parseInt(text)) {
+            check = true
+        }
+        return check
+    }
+    let x = prompt("Nhập vào đây");
+    let y = exam(x);
+    if( y === true){
+        alert("Hàm là ký tự số")
+    }else {alert("Hàm không phải ký tự số")}
+</script>
+</body>
+</html>

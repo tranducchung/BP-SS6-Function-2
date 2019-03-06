@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function checkNumber(number) {
+        let check = false;
+        if (number > 0 ){
+            check = true
+        }
+        return check
+    }
+    let enterNumber = parseInt(prompt("Enter number want"));
+    let result = checkNumber(enterNumber);
+    if(result===true){
+        alert("Số "+ enterNumber+ " là số nguyên dương")
+    }else {alert("Số "+ enterNumber+" không phải số nguyên dương")}
+</script>
+</body>
+</html>

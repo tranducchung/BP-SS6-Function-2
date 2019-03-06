@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<body>
+<script>
+    function reverseArray(numberArray) {
+        let x = 0;
+        let first = 0;
+        let last = numberArray.length-1;
+        while (first<last) {
+            x = numberArray[first];
+            numberArray[first] = numberArray[last];
+            numberArray[last] = x;
+            first++;
+            last--;
+        }
+        return numberArray
+    }
+    let enterArray = [];
+    for(let i=0;i<10;i++){
+       let number = parseInt(prompt("Enter the value for each element in the array"));
+        enterArray[i]= number;
+    }
+    let result = reverseArray(enterArray);
+    alert(result)
+</script>
+</body>
+</html>
